@@ -24,12 +24,12 @@ public class SearchRestController {
             return csv.resultClass(b);
         } else if (resultSearch.getResultList() == null) {
             resultSearch = this.restRepository.search(title);
-            String linha = csv.listCsv(resultSearch, title);
-            fileCsv.writeFile(linha);
+            String line = csv.listCsv(resultSearch, title);
+            fileCsv.writeFile(line);
         }
         return resultSearch;
     }
-}
 
+}
 
 

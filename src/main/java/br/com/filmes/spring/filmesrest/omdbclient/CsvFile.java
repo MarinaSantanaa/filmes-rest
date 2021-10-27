@@ -70,7 +70,6 @@ public class CsvFile {
         return resultSearches.get(b);
     }
 
-
     public void writeFile(String line) {
         Path filePath = getFilePath("cache.csv");
         try {
